@@ -14,13 +14,13 @@ var upCase;
 function generatePassword(){
 enter = parseInt(prompt("How many characters do you want your password to be? Enter a number between 8 and 128 "));
 if (!enter) {
-  alert("This need a number")
+  alert("This needs a number")
 } else if (enter < 8 || enter > 128) {
 enter = parseInt(prompt("Number has to be between 8 and 128"));
 } else {
   upCase = confirm("Do you want uppercase letters? Select OK for YES and Cancel for NO ");
   loCase = confirm("Do you want lower case letters? Select OK for YES and Cancel for NO ");
-  num = confirm("DO you want to use numbers? Select OK for YEs and Cancel for No");
+  num = confirm("DO you want to use numbers? Select OK for YEs and Cancel for NO");
   speChar = confirm("Do you want special characters? Select OK for YES and cancel for NO ");
 };
   if (!upCase && !loCase && !num && !speChar) {
@@ -82,7 +82,7 @@ var genPass = [];
   genPass.push(pickChoices);
  }
  var ps = genPass.join("");
- 
+
   return ps; 
 }
 
